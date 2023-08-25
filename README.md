@@ -53,6 +53,10 @@ python setup.py [inputImg] [pixelSize]
 python setup.py img.tiff 0.5
 ```
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ---
 
 Feel free to contribute to this documentation by creating pull requests or raising issues.
