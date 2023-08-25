@@ -50,7 +50,7 @@ python setup.py [inputImg] [pixelSize]
 ```
 ### Example
 ```
-python setup.py img.tiff 0.5
+python setup.py img.tif 0.5
 ```
 
 ## License
