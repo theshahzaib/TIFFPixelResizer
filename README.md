@@ -9,13 +9,13 @@ TIFFPixelResizer is a versatile image processing tool designed to efficiently re
 
 `Resolution` refers to the level of detail in an `image` or video, which is determined by the number of `pixels` in the `[width x height]` dimensions.
 
-**Unit**: Pixels (px)
+**Unit**: `Pixels (px)`
 
 ## **Pixel Size**
 
 `Pixel Size` indicates the resolution of an image, representing how many meters are covered by each pixel in the image.
 
-**Unit**: Meter per pixel (m/px) or (mpp)
+**Unit**: `Meter per pixel (m/px) or (mpp)`
 
 ## **Image Density**
 
