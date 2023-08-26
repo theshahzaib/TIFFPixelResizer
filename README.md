@@ -27,7 +27,6 @@ A `Scaling Factor` is a `constant` used to resize images by multiplying or divid
 
 #
 
-
 ## **Requirements**
 
 - Conda (Package and environment management system)
@@ -52,6 +51,33 @@ python setup.py [inputImg] [pixelSize]
 ```
 python setup.py img.tif 0.5
 ```
+
+### Extracting Image Pixel Size from Input Image
+```python
+dst = gdal.Open(input_img)
+dstt = dst.GetGeoTransform()
+dsmppx = dstt[1] * 100000
+input_mppx = round(dsmppx,2)
+```
+
+### Updating New Pixel Size (meter per pixel)
+
+```python
+new_x_mpp = x_mpp * (1/scaling_factor)
+new_y_mpp = y_mpp * (1/scaling_factor)
+geo_transform = list(geo_transform)
+geo_transform[1] = new_x_mpp
+geo_transform[5] = new_y_mpp
+```
+
+### Set geolocation back to a resized tif image
+```python
+ds = gdal.Open(output_img, gdal.GA_Update)
+ds.SetGeoTransform(tuple(geo_transform))
+ds.SetProjection(projection)
+ds = None
+```
+
 
 ## License
 
