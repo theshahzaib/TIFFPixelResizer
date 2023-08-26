@@ -52,7 +52,7 @@ python setup.py [inputImg] [pixelSize]
 python setup.py img.tif 0.5
 ```
 
-### Extracting Image Pixel Size from Input Image
+<!-- ### Extracting Image Pixel Size from Input Image
 ```python
 dst = gdal.Open(input_img)
 dstt = dst.GetGeoTransform()
@@ -76,7 +76,7 @@ ds = gdal.Open(output_img, gdal.GA_Update)
 ds.SetGeoTransform(tuple(geo_transform))
 ds.SetProjection(projection)
 ds = None
-```
+``` -->
 
 
 ## License
