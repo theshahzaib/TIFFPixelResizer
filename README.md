@@ -3,7 +3,7 @@
 ## **Introduction**
 TIFFPixelResizer is a versatile image processing tool designed to efficiently resize TIFF images to specific pixel dimensions. This repository provides a user-friendly command-line interface and library that allows you to adjust the dimensions of TIFF images while preserving their quality and aspect ratio.
 
-![Workflow Diagram](./imgs/im1.png)
+![WorkflowDiagram](./imgs/im1.png)
 
 ## **Resolution**
 
@@ -51,8 +51,10 @@ python setup.py [inputImg] [pixelSize]
 ```
 python setup.py img.tif 0.5
 ```
+- `Output (converted) image will be saved in the same input path.`
 
-<!-- ### Extracting Image Pixel Size from Input Image
+## Snippets
+### Extracting Image Pixel Size from Input Image
 ```python
 dst = gdal.Open(input_img)
 dstt = dst.GetGeoTransform()
@@ -70,19 +72,21 @@ geo_transform[1] = new_x_mpp
 geo_transform[5] = new_y_mpp
 ```
 
+- `Scaling factor calculation is shown in the `[workflow diagram](./imgs/im1.png) 
+
 ### Set geolocation back to a resized tif image
 ```python
 ds = gdal.Open(output_img, gdal.GA_Update)
 ds.SetGeoTransform(tuple(geo_transform))
 ds.SetProjection(projection)
 ds = None
-``` -->
+```
 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE). \
+Author @ [Shahzaib](./) (AI Dev)
 
 ---
-
 Feel free to contribute to this documentation by creating pull requests or raising issues.
