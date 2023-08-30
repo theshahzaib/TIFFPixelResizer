@@ -84,6 +84,8 @@ ds.SetProjection(projection)
 ds = None
 ```
 
+## Documentation
+- Portable Document Format (PDF) [Link](./pdf/TIFFPixelResizer-Documentation.pdf)
 
 ## License
 
