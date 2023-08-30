@@ -88,7 +88,7 @@ ds = None
 ## License
 
 This project is licensed under the [MIT License](LICENSE). \
-_Author @ [Shahzaib](./) (AI Dev)_
+_Author @ [Shahzaib](https://github.com/theshahzaib) (AI Dev)_
 
 ---
 Feel free to contribute to this documentation by creating pull requests or raising issues.
