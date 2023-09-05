@@ -5,7 +5,7 @@ TIFFPixelResizer is a versatile image processing tool designed to efficiently re
 
 ### _Workflow Diagram_
 
-![WorkflowDiagram](./imgs/im1.png)
+![WorkflowDiagram](./imgs/tiffexplain.png)
 
 ## **Resolution**
 
