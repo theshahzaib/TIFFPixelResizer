@@ -97,13 +97,15 @@ The shift from serial execution to 'fast-setup' parallel execution was prompted 
 
 Here is a table and diagram that summarizes the key differences between serial and parallel execution:
 
+![](./imgs/tiffexplain-fast-Page-3.png)
+
 | Feature | Serial Execution | Parallel Execution |
 |---|---|---|
 | Number of threads | 1 | Multiple |
 | Execution order | One image at a time | Multiple images simultaneously |
 | Execution time | More | Less |
 
-![](./imgs/tiffexplain-fast-Page-3.png)
+
 
 ## Usage
 ```sh
