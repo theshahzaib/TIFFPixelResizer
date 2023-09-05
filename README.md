@@ -84,6 +84,41 @@ ds.SetProjection(projection)
 ds = None
 ```
 
+## **Enhancing Efficiency:** Migrating from Serial to Parallel Execution
+
+The shift from serial execution to 'fast-setup' parallel execution was prompted by the sluggish performance of our application, particularly when processing individual images. The extended processing time for a single image was impeding overall efficiency. Embracing parallel execution allowed us to concurrently process tasks, dramatically reducing processing times and significantly improving application performance. This transition has been instrumental in addressing the performance issues associated with serial execution, especially when time-sensitive image processing is involved.
+
+## _Serial vs Parallel Execution Workflow_
+![serialvsparallel](./imgs/tiffexplain-fast-Page-2.png)
+
+* In serial execution, the program processes one image at a time, in sequence.
+* In parallel execution, the program divides the work of processing the images among multiple threads.
+* Parallel execution can significantly speed up the execution time, especially for large n.
+
+Here is a table and diagram that summarizes the key differences between serial and parallel execution:
+
+| Feature | Serial Execution | Parallel Execution |
+|---|---|---|
+| Number of threads | 1 | Multiple |
+| Execution order | One image at a time | Multiple images simultaneously |
+| Execution time | More | Less |
+
+![](./imgs/tiffexplain-fast-Page-3.png)
+
+## Usage
+```sh
+python fast-setup.py
+```
+- _Replace `output_mppx` and `input_folder` in the start of `fast-setup.py` script_
+
+```python
+### Replace your required output Pixel Size (m/px)
+output_mppx = 0.5 
+
+### Replace with your input TIFF images folder
+input_folder = 'tiffs'
+```
+
 ## Documentation
 - Portable Document Format (PDF) [Link](./pdf/TIFFPixelResizer-Documentation.pdf)
 
