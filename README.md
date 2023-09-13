@@ -1,7 +1,7 @@
 # Resize TIFF Images with Pixel Size
 
 ## **Introduction**
-TIFFPixelResizer is a versatile image processing tool designed to efficiently resize TIFF images to specific pixel dimensions. This repository provides a user-friendly command-line interface and library that allows you to adjust the dimensions of TIFF images while preserving their quality and aspect ratio.
+TIFFPixelResizer is a versatile image processing tool designed to efficiently resize TIFF images to specific pixel dimensions. This repository provides a user-friendly command-line interface and library that allows you to adjust the dimensions of TIFF images while preserving their quality, geo-locations data (metadata) and aspect ratio.
 
 ### _Workflow Diagram_
 
